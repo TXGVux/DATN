@@ -25,25 +25,30 @@ class DataCleaner:
     def clean_numeric_column(self, column: str, pattern: str = r'(\d+(?:\.\d+)?)', fillna_value='0'):
         '''
         Làm sạch dữ liệu số. Nếu cột có đơn vị "triệu", chuyển sang tỷ bằng cách chia 1000.
+        Loại bỏ các dòng chứa "giá thỏa thuận" trước khi xử lý.
         '''
         if column in self.df.columns:
-            # Sao lưu dữ liệu gốc để nhận biết đơn vị
-            self.df[column + '_raw'] = self.df[column].fillna(fillna_value).astype(str).str.lower()
+            # Loại bỏ các dòng chứa "giá thỏa thuận"
+            self.df = self.df[~self.df[column].str.contains('Giá thỏa thuận', case=False, na=False)]
 
-            # Trích xuất phần số
-            self.df[column] = self.df[column + '_raw'].str.extract(pattern)[0]
+        # Sao lưu dữ liệu gốc để nhận biết đơn vị
+        self.df[column + '_raw'] = self.df[column].fillna(fillna_value).astype(str).str.lower()
 
-            # Ép kiểu float
-            self.df[column] = pd.to_numeric(self.df[column], errors='coerce')
+        # Trích xuất phần số
+        self.df[column] = self.df[column + '_raw'].str.extract(pattern)[0]
 
-            # Chuyển triệu sang tỷ nếu có từ "triệu" trong dữ liệu gốc
-            self.df[column] = self.df.apply(
-                lambda row: row[column] / 1000 if 'triệu' in row[column + '_raw'] else row[column],
-                axis=1
-            )
+        # Ép kiểu float
+        self.df[column] = pd.to_numeric(self.df[column], errors='coerce')
 
-            # Xóa cột tạm nếu không cần giữ lại
-            self.df.drop(columns=[column + '_raw'], inplace=True)
+        # Chuyển triệu sang tỷ nếu có từ "triệu" trong dữ liệu gốc
+        self.df[column] = self.df.apply(
+            lambda row: row[column] / 1000 if 'triệu' in row[column + '_raw'] else row[column],
+            axis=1
+        )
+
+        # Xóa cột tạm nếu không cần giữ lại
+        self.df.drop(columns=[column + '_raw'], inplace=True)
+
 
     def get_clean_data(self) -> pd.DataFrame:
         return self.df
