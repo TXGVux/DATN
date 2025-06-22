@@ -1,0 +1,1577 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='batdongsan_clean (BĐS_Clean)' inline='true' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BĐS_Clean' name='excel-direct.0d3csyh1scc9381d2e33g0hz6g2o'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/du an/project-sample/src/clean/clean bds/BĐS_Clean.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0d3csyh1scc9381d2e33g0hz6g2o' name='batdongsan_clean' table='[batdongsan_clean$]' type='table'>
+          <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='BĐS' ordinal='0' />
+            <column datatype='string' name='Loại BĐS' ordinal='1' />
+            <column datatype='string' name='Tỉnh/Thành phố' ordinal='2' />
+            <column datatype='string' name='Quận/Huyện' ordinal='3' />
+            <column datatype='real' name='Diện tích(m2)' ordinal='4' />
+            <column datatype='integer' name='Phòng ngủ' ordinal='5' />
+            <column datatype='integer' name='Nhà vệ sinh' ordinal='6' />
+            <column datatype='real' name='Giá (tỷ đồng)' ordinal='7' />
+            <column datatype='real' name='Triệu/m2' ordinal='8' />
+            <column datatype='date' date-parse-format='yyyy' name='Thời gian(năm)' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J10001:no:A1:J10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BĐS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BĐS]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>BĐS</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LVI_RVN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loại BĐS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Loại BĐS]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Loại BĐS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LVI_RVN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tỉnh/Thành phố</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tỉnh/Thành phố]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Tỉnh/Thành phố</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LVI_RVN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quận/Huyện</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Quận/Huyện]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Quận/Huyện</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LVI_RVN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diện tích(m2)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Diện tích(m2)]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Diện tích(m2)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phòng ngủ</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Phòng ngủ]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Phòng ngủ</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nhà vệ sinh</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nhà vệ sinh]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Nhà vệ sinh</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Giá (tỷ đồng)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Giá (tỷ đồng)]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Giá (tỷ đồng)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Triệu/m2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Triệu/m2]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Triệu/m2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Thời gian(năm)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Thời gian(năm)]</local-name>
+            <parent-name>[batdongsan_clean]</parent-name>
+            <remote-alias>Thời gian(năm)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Nhà vệ sinh:qk]&quot;' value='WC' />
+          <alias key='&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Phòng ngủ:qk]&quot;' value='Phòng ngủ' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Nhà vệ sinh]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Phòng ngủ]' role='measure' type='quantitative' />
+      <column datatype='date' datatype-customized='true' name='[Thời gian(năm)]' role='dimension' type='ordinal' />
+      <column caption='batdongsan_clean' datatype='table' name='[__tableau_internal_object_id__].[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]' role='measure' type='quantitative' />
+      <column-instance column='[Nhà vệ sinh]' derivation='Attribute' name='[attr:Nhà vệ sinh:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Nhà vệ sinh]' derivation='Avg' name='[avg:Nhà vệ sinh:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Phòng ngủ]' derivation='Avg' name='[avg:Phòng ngủ:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Nhà vệ sinh]' derivation='Sum' name='[sum:Nhà vệ sinh:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Phòng ngủ]' derivation='Sum' name='[sum:Phòng ngủ:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Giang/AppData/Local/Temp/TableauTemp/#TableauTemp_1ok0io003nqhx813v7mxr1wtfm83.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/22/2025 06:05:54 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy' name='Thời gian(năm)' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>BĐS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BĐS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BĐS</remote-alias>
+              <ordinal>0</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>129477</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LVI_RVN' />
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Loại BĐS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Loại BĐS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Loại BĐS</remote-alias>
+              <ordinal>1</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LVI_RVN' />
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tỉnh/Thành phố</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tỉnh/Thành phố]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tỉnh/Thành phố</remote-alias>
+              <ordinal>2</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LVI_RVN' />
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quận/Huyện</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quận/Huyện]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quận/Huyện</remote-alias>
+              <ordinal>3</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2381</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LVI_RVN' />
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diện tích(m2)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Diện tích(m2)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diện tích(m2)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1525</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Phòng ngủ</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Phòng ngủ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Phòng ngủ</remote-alias>
+              <ordinal>5</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nhà vệ sinh</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nhà vệ sinh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nhà vệ sinh</remote-alias>
+              <ordinal>6</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Giá (tỷ đồng)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Giá (tỷ đồng)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Giá (tỷ đồng)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>990</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Triệu/m2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Triệu/m2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Triệu/m2</remote-alias>
+              <ordinal>8</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6880</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Thời gian(năm)</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[Thời gian(năm)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Thời gian(năm)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>batdongsan_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <object-id>[batdongsan!clean_85661FEF378C47C29219E223FE19B3C2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[attr:Nhà vệ sinh:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Nhà vệ sinh:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[sum:Nhà vệ sinh:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Phòng ngủ:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[sum:Phòng ngủ:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='batdongsan_clean' id='batdongsan!clean_85661FEF378C47C29219E223FE19B3C2'>
+            <properties context=''>
+              <relation connection='excel-direct.0d3csyh1scc9381d2e33g0hz6g2o' name='batdongsan_clean' table='[batdongsan_clean$]' type='table'>
+                <columns gridOrigin='A1:J10001:no:A1:J10001:0' header='yes' outcome='6'>
+                  <column datatype='string' name='BĐS' ordinal='0' />
+                  <column datatype='string' name='Loại BĐS' ordinal='1' />
+                  <column datatype='string' name='Tỉnh/Thành phố' ordinal='2' />
+                  <column datatype='string' name='Quận/Huyện' ordinal='3' />
+                  <column datatype='real' name='Diện tích(m2)' ordinal='4' />
+                  <column datatype='integer' name='Phòng ngủ' ordinal='5' />
+                  <column datatype='integer' name='Nhà vệ sinh' ordinal='6' />
+                  <column datatype='real' name='Giá (tỷ đồng)' ordinal='7' />
+                  <column datatype='real' name='Triệu/m2' ordinal='8' />
+                  <column datatype='date' date-parse-format='yyyy' name='Thời gian(năm)' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='Thời gian(năm)' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Avg_giá/m2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Giá nhà trung bình/m2 các tỉnh - <]]></run>
+            <run>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='date' datatype-customized='true' name='[Thời gian(năm)]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Triệu/m2]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Tỉnh/Thành phố]' role='dimension' type='nominal' />
+            <column-instance column='[Triệu/m2]' derivation='Avg' name='[avg:Triệu/m2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tỉnh/Thành phố]' derivation='None' name='[none:Tỉnh/Thành phố:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thời gian(năm)]' derivation='Year' name='[yr:Thời gian(năm):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]'>
+            <groupfilter function='member' level='[yr:Thời gian(năm):ok]' member='2025' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Triệu/m2:qk]' scope='rows' value='Triệu/m2' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Triệu/m2:qk]' value='*#.## &quot;Triệu/m2&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Triệu/m2:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Triệu/m2:qk]</rows>
+        <cols>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</cols>
+      </table>
+      <simple-id uuid='{1FD9099E-2352-4930-AF48-D3155F16ADB0}' />
+    </worksheet>
+    <worksheet name='Avg_giá/m2 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Giá nhà trung bình/m2 các tỉnh - <]]></run>
+            <run>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='real' name='[Diện tích(m2)]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Thời gian(năm)]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Tỉnh/Thành phố]' role='dimension' type='nominal' />
+            <column-instance column='[Diện tích(m2)]' derivation='Avg' name='[avg:Diện tích(m2):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tỉnh/Thành phố]' derivation='None' name='[none:Tỉnh/Thành phố:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thời gian(năm)]' derivation='Year' name='[yr:Thời gian(năm):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]'>
+            <groupfilter function='member' level='[yr:Thời gian(năm):ok]' member='2025' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Diện tích(m2):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Diện tích(m2):qk]</rows>
+        <cols>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</cols>
+      </table>
+      <simple-id uuid='{6D2DAEA4-EE7F-41ED-A9CA-6EF64B276DA8}' />
+    </worksheet>
+    <worksheet name='Avg_giá/tỉnh'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Giá nhà trung bình các tỉnh - &lt;</run>
+            <run>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='real' name='[Giá (tỷ đồng)]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Thời gian(năm)]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Tỉnh/Thành phố]' role='dimension' type='nominal' />
+            <column-instance column='[Giá (tỷ đồng)]' derivation='Avg' name='[avg:Giá (tỷ đồng):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tỉnh/Thành phố]' derivation='None' name='[none:Tỉnh/Thành phố:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Thời gian(năm)]' derivation='Year' name='[yr:Thời gian(năm):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]'>
+            <groupfilter function='member' level='[yr:Thời gian(năm):ok]' member='2025' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]' scope='rows' value='Giá (tỷ đồng)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]' value='*#.## &quot;Tỷ&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]</rows>
+        <cols>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</cols>
+      </table>
+      <simple-id uuid='{1A9AF43B-CDD5-49C1-AB4D-B22C2A67050F}' />
+    </worksheet>
+    <worksheet name='Avg_phòng/tỉnh'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Trung bình số phòng ngủ &amp; WC</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='integer' name='[Nhà vệ sinh]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Phòng ngủ]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Tỉnh/Thành phố]' role='dimension' type='nominal' />
+            <column-instance column='[Nhà vệ sinh]' derivation='Avg' name='[avg:Nhà vệ sinh:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Phòng ngủ]' derivation='Avg' name='[avg:Phòng ngủ:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tỉnh/Thành phố]' derivation='None' name='[none:Tỉnh/Thành phố:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Nhà vệ sinh:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Phòng ngủ:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[Multiple Values]' value='*#.# &quot;Phòng&quot;' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Phòng ngủ:qk]' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[:Measure Names]' />
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[Multiple Values]</rows>
+        <cols>([federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk] / [federated.10kihkp1om9v8g16oznnn0b1sjx8].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{3DA54F70-3EDD-4A87-A073-5009A56066D6}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='real' name='[Diện tích(m2)]' role='measure' type='quantitative' />
+            <column-instance column='[Diện tích(m2)]' derivation='Avg' name='[avg:Diện tích(m2):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Diện tích(m2):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9F16D8B2-36F3-4E0D-B5B8-7B83BA3DDF47}' />
+    </worksheet>
+    <worksheet name='biến động giá'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Biến động giá nhà theo thời gian</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='real' name='[Giá (tỷ đồng)]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Thời gian(năm)]' role='dimension' type='ordinal' />
+            <column-instance column='[Giá (tỷ đồng)]' derivation='Avg' name='[avg:Giá (tỷ đồng):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Giá (tỷ đồng)]' derivation='Avg' forecast-column-base='[avg:Giá (tỷ đồng):qk]' forecast-column-type='forecast-value' name='[fVal:avg:Giá (tỷ đồng):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Thời gian(năm)]' derivation='Year' name='[yr:Thời gian(năm):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[fVal:avg:Giá (tỷ đồng):qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='exp' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='3' />
+                <format attr='stroke-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[fVal:avg:Giá (tỷ đồng):qk]</rows>
+        <cols>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{90FC7257-EAF8-4ED5-88B0-E557E7362593}' />
+    </worksheet>
+    <worksheet name='giá tb'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Giá nhà trung bình</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='batdongsan_clean (BĐS_Clean)' name='federated.10kihkp1om9v8g16oznnn0b1sjx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10kihkp1om9v8g16oznnn0b1sjx8'>
+            <column datatype='real' name='[Giá (tỷ đồng)]' role='measure' type='quantitative' />
+            <column-instance column='[Giá (tỷ đồng)]' derivation='Avg' name='[avg:Giá (tỷ đồng):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]' value='*#.## &quot;Tỷ&quot;' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FF074100-7EEF-4075-A3B4-5C23482A25E0}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Avg_giá/tỉnh'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[avg:Giá (tỷ đồng):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Thời gian(năm):qk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8ED129BC-00EA-4FB4-B1D4-4F339BA4D035}' />
+    </window>
+    <window class='worksheet' name='Avg_giá/m2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Thời gian(năm):qk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C06A7C4A-87CA-41D5-A4ED-3F13D3D42539}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Avg_giá/m2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Thời gian(năm):qk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3BC2E8EA-6DC8-4E40-9E92-445C0908E95D}' />
+    </window>
+    <window class='worksheet' name='Avg_phòng/tỉnh'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10kihkp1om9v8g16oznnn0b1sjx8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[:Measure Names]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Loại BĐS:nk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[none:Tỉnh/Thành phố:nk]</field>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A42853C3-0013-4938-A9D4-58CF65FCEB01}' />
+    </window>
+    <window class='worksheet' name='biến động giá'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.10kihkp1om9v8g16oznnn0b1sjx8].[yr:Thời gian(năm):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0E7DF96A-C90B-4B0B-B18E-9B54AA7CE65D}' />
+    </window>
+    <window class='worksheet' name='giá tb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EC2962AA-F131-412D-8CF0-811B9202412B}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3AF7B204-564C-437B-AAD4-768F0A1AD621}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg_giá/m2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Avg_giá/m2 (2)' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Avg_giá/tỉnh' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Avg_phòng/tỉnh' width='192'>
+      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
+      IGxNAiBsTQIgbE0CIGxNAiBsTQIgbE0CIGyt5gBUy3mu/P0/kLv7vJhOcP36l9xZWKpzaUI0
+      Xs0fitcdbrpbW7jXzWVlKcFzQ0MsTExgWZ3SF0j6An1jPd+qvkC6bqDrXzfYcRqQL5SomJb0
+      BUL6Aj2pjr3WF6jmABSz66yVi2SnZnFQ4Uj/Ye5MTdN78MiTf1mIPabmAHgCzQydPw8olNp8
+      5x04eaoBpQnReM/QHl3bkVMKIRpJpkGFrUkAhK1JAIStSQCErUkAhK1JAIStSQCErUkAhK1J
+      AIStSQCErUkAhK1JAIStSQCErUkAhK1JAIStSQCErUkAhK1JAISt1RwAq1Lkq9u3WFxdB6Bc
+      2ODG9X9mYSle9+KEaLSaA7C6FKGzf4D1+CIA2bVlslWNYCCAUuqRXzvSkAe2Xf/W184U8eC2
+      P1TXnhmLnSkDxePHY4f+V7Ydh5o/FK+UwmEY6MZmdpp7T/C9HosbN25zdujM1oKt+5ph7UQv
+      HAUPrHPbFzW6joe23bKsB+vawQA8bjyUanyzMvjm9j/8XFk7Mx7bjUXNAWjr7Oarsds0tXUR
+      iSzQ5HMzH12mqa0DXddRSqHr+gONl7SdaIzFk5s97UQXC+2hbX94LHaqMdbD633Uz3eCoRuP
+      HQ9rp+rYZixqDoDTE+Ts0BCgKBSKeL1ezrR2Pmt9QuyKZ4ifhtfrrV8lQuwCmQYVtiYBELYm
+      ARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2JgEQtiYBELYmARC2VvuH
+      4qslxr+6zXJiAwCzUmB05Bbx9WzdixOi0WoOQHwxQmvfMRIrEQCW5+boPvocK7GFuhcnRKPV
+      fgRQFk6nc+szlqal4XI5cBhyNiX2n5r32taOLmYnbuH0hohFo3T0dDBx8wbuYEsj6hOioWr+
+      ULzL28TQ0DlAkcsVcPt9nDsnO7/YnzR1t09HLpejUqnUZaH5fB6fz7f1XGWWUMV0XZa9Hc3l
+      Qwsd+HqdSqE91AcllshQrpgNrSMUcNMS/LpZwMNjAWDFJxpaA4DW1I3mbtp6/vB4lKsmsXim
+      4XX0tgdxOb5uSfKNfaOURqWXGl6H3j7wwPN747EVgHpRSpFOpwmFQvVcbM0sy9rcwJ1oBvQY
+      qVSKcDi8qzXA5njsVC+gx9lr47GjI5LPpIjGFilXTUqlEgDKqpLPF2telrJMpicnqW4TX13X
+      n2rnLxaKKKXIZDKARbFYopBNsxJP1r2xXGJlkZVEErNS4t6BqVTIUTVrX1Mhs85cdGXbnz/V
+      zq8sioUSZqVIrlCmXCxiKsXa6jKZXO3/Z49jVopEo1Ey+eLX+4ZS5HK5pxr32Nw06eL2ZzT3
+      xsP4+c9//vOnWP5jlUolPB7PN74/PjFGS3OYuYVF1lbmyRYVoaCXL7/4ktbObrLrcSLLCZrD
+      TSzMTJGtQFPARzq1xvzCIk3hZlaisyTSJXQd3E4d0zLwuJ11qz06N4XT5+falS/obnMxs5Rj
+      eXmZcFMQr99HrZEqFouPHAuAsfFRXGaBeHKN2Foep9OJmVtjfGGVjpYAiwsRchUNt15lcnoG
+      rz+IywmLC1HWcyUCHoPJySkMtw/TrFCplPEHguh1O+opJianobjBbKJAbn2VYi5FznLhcTvx
+      uF01L3G78civ3mGx5CcRmyOfTZFc2yDU3Mz06E0sVxC9WmRhfh5vUwsb8RjRlXWaW8IUshli
+      0QV0d4BSZo2ZhRWCfjdVZWCaJn7vo8f+nh09AljVErHFJTy+ACYOdDPH2Ngkp4aGmJqcYCG6
+      jL9aZi46jRHuJbmyeW44PxehvclL5M4oWT1Mbj3OXCRCa9hHJJaoa41t4SDz09N0Hz7E6GSC
+      tiZo6eijvb217oOV3VgnkSnjd+kEmtuJL0dZWElxvNVgfD5KtuxmI7HM9MwsRw+EmFtMAwVW
+      EmVKG0kmpqc4dKibaCxOZHGFajZN6Un9UWuh6Rg6bFQcNDkqmJpOLlvm4IFuwk2B+q3nrtXl
+      GJrDQ6VSpa/Nzdj0HZzNh1iJzhJbWKDrYBczo+OsZsqYuTRVIB5ZoKmzi8WFGPPRFdxWieTa
+      EnnNz8pi7Inr3NEAGO4AZ868wPH+XgKBIA6HA7/XzeydOxguD/5AALfTgcPlYjkyR/ruqZHX
+      H8DldOJwuUguR1nbyOHWTEYnpiib9b2oDbS2MxdZ5XhvC6sbGVrDrSSiU0xMzVLvdrKtXX2c
+      Hx4m5HMTCARwOAwMq8LsYgK/100g4MfhcODAZHpmfutUIBgM4nQ4cDl0ZmZmKZuKQjrJXHS5
+      zhVCi8cgVbZwO8pU8dDW6uf2rdssrqzVd0WaxtGBUwydHsTj9eNzOzGcHjZWo5Sq4HR78Xg8
+      OB0G+dQay/HN9vyaw43f78Vh6FRKWSJLqxhOJ7HZSdbT+Sevdicvgu+/ENu8SAXQMKtVDIdj
+      88ocqBSzjIxP4/SFOD14dOuClmqRmyPjmIaHoecHMC0LQzfQ9fpe6JqmiaHrmJaFbhgo08RS
+      CsPhqPkU6HEXfffGY7NTs77VsdmyrK0bjUopEksLLMQW6Tk2RE+Lh803eUV6bZk7cxFae49z
+      oLMJpTQM4+mufbajlIWlNt8pFRq6BlWziqYbGE9xXbHdeChl3V2+tjkumoYFKNMEXUcDNF1D
+      mVUmxkZJ5S0uvDSEZlmgayhLMTs1ynIyz4svDaNbJprx5Bq/tbNAe8VemfXYK/baeOz+vJgQ
+      u0gCIGxNAiBs7f8DeI3otn4aFMsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='25' name='Sheet 6' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADlUlEQVRYhe2YUSh7bRzHv//tXX80Ka2lTS4kLpQbWtbc2A3ahdHciFw5F2hKc6c0orgV
+      OSZJilK7dYEkkkRas2SKNVmNdmRzlm2d5/e/W68Xr/N/99ap99338vl9fr/ne771PE+dH0RE
+      +B9LpbQBpZUPQGkDSisfgNIGlFY+AKUNKK18AEobUFr5AJQ2oLTyAShtQGnlHEAkEsHY2Bgs
+      FgsaGhrQ1taG3d1dMMYAAMlkEh6PBzabDSaTCSaTCQ6HA8fHx1nmMw0MDGRnWiwWTE9PI5FI
+      ZOtvb2/weDywWq3ZmT6f790MOQwoB93c3FBnZydtbm6SKIokSRL5/X7q6uqis7MzIiK6vLyk
+      2dlZCoVCJEkSSZJEBwcH1NHRkWX+KkmSaHt7m15fX4mISBAEGh8fJ5fLRZlMhiRJoqmpKXK5
+      XCQIQpa32Wzk9/uzM75jiIhyCuDp6YlisdiHdZ7nief5v+2dn5//lvmzHh4eqK+vj6LRKAWD
+      QeI47sPePM+T2+0mSZJkMUREOR0BnU6H0tLSd2uMMby8vECv13/Zl06nEQqFUFNTI3uv+/t7
+      lJSUoLi4GPF4HAaD4cPejY2NCIfDSCQSshjgX74EGWPwer24vb2F1Wr9UE+lUjg/P8fIyAgq
+      KipgNpu/nReNRrG2toa5uTkMDg6isLAQBQUFiMViEEXxHV9WVgbGGFKplCwGAP7I8ZsBAD6f
+      D263G+3t7ejt7YXD4fiU02g00Ol0MBgMODk5gd1uR3l5+ZdzVSoVtFpt1vTh4SGqqqpQW1uL
+      iYkJzMzMYGdnB5IkwWg0oqWlBel0GgBkMQByuwSJiC4uLqi7u5uur69/q29ra4smJydl87FY
+      jDiOo2Aw+CXj8/nI6XSSKIqymZyOwPPzMxYXFzE6Oorq6urf6tVqtRAEAZIkyeI1Gg0AIB6P
+      f1pnjGFvbw/19fUoKiqSzeQUQCAQgF6vR11d3ZfMxsYGlpaWEI1GwRgDYwyBQACrq6toamqC
+      Wq3+0PP4+IjT09PsOY3H41hfX0cqlUJlZSUAwOv14urqCowxJJNJ8DyPYDAIu92enSOH+UH0
+      z3+Lr6ysYGFh4dMax3HgOA6RSATLy8s4OjqCIAhQqVQwGo3o7+9Ha2srVCoVRFHE0NAQzGYz
+      OI4DYww9PT24u7tDJpPBz58/0dzcDKfTmX1d9vf3MT8/j3A4DLVaDavViuHh4XevjxwmpwD+
+      C/oFohkVc9znvukAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='biến động giá' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='25' name='giá tb' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAECklEQVRYhe2Xz0vTfxzHH9mW7IeLwOECEeoy6xaIbKyFgxgDJVj/QOkhjeoiOyRINiIQ
+      QailBz20MdZlhw3xYOghWpCwm6G5g7VDRWxCMm2yz97b590h2JehftN94fvhy3fP4+vX5/F+
+      ft6fN+/PKSml5H+sFq0BtFbTAK0BtFbTAK0BtFbTAK0BtFbTAK0BtFbTAK0BtFbTAK0B/g1l
+      Mhm8Xi/Xrl3j/fv3dblTjf4Nfv78mWAwyObmJgCXLl1iYmKCixcvHtmztrbG3Nwca2trKIpC
+      a2sr/f39PHjwgLa2tlrd3t4ePp8PIQRdXV08fPiQnp6eulnz8/PMz88f+azJyUmuX78OgBCC
+      crnMq1ev0Ol0DA0N/VUoG1A2m5V+v18mEglZLpdluVyWiURC+v1+mc1mD+2pVqsyFArJpaUl
+      +fPnTymllD9+/JATExMyEAhIIYSUUspCoSBHRkZksViU1WpVfvz4UaZSqb/lyeVycnBwUOZy
+      uSNr3r59K+/evXugpiEDksmkDAaDslqt1i0wGAzKZDJ5olnfvn2Tt27dqoEtLCzIp0+fnmjG
+      cQw4Sg2dAUajkVKpdCBeKpUwGo0nmvXlyxfOnj1LW1sbiqLw5s2b2tb9p4pGo4RCobqYqqo8
+      efKE5eVloMFD0OFwsLOzQzweRwiBEIJ4PM7Ozg4Oh+OP/aqqksvliEajvHjxgnv37mEwGCgW
+      i+zv77O1tUVvby9Op5PR0VHy+XwjmPT19bG+vs729nYtls/n+f79O1euXAEaNGB3dxchBB0d
+      HbVYR0cHQgh2d3f/2N/S0oLZbMZms6GqKu/evUNVVSqVCoqi0NfXRzqdZnV1lcePH/Po0SM2
+      NjZOzNnV1cXw8DDPnz+nUqmgqipzc3Pcvn0bq9X6m+XEU4FIJILP58Pj8aDX69Hr9Xg8Hnw+
+      H5FI5FgzTCYTXq+XmZkZ0uk0nz59wmw2YzKZ+Pr1a63OYrFgs9kO/eSOo8uXL6MoCltbW+Tz
+      efb29uju7q7lGzKgVCqh0+kOxHU63YlB9Xo98HtXGY1G7HY7r1+/ruULhQK5XA6LxdIIKgaD
+      AbfbzcrKCh8+fMBut9fNasgAr9dLOBwmlUqhqiqqqpJKpQiHw3i93kN78vk84+PjpNNpFEUB
+      fi86FouhKErt/nDz5k3W19cRQrC/v8/Lly85f/48Fy5caAQVAKfTSSaTYXFxEbfbXZc7+BqP
+      oatXr3LmzBlmZ2cJBAIA2O12xsbG6O3tBaBYLHL//n2cTid37tyhvb0dl8vFs2fPyGazCCFo
+      bW3F4/EwNTXFuXPnAOjs7GR6ehqXy8Xp06cZGBggEAgcuuOOK6vVit1uJ5PJHDCy4Zvgf02x
+      WAyLxcKNGzfq4r8AzmUrsWaaa7EAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
