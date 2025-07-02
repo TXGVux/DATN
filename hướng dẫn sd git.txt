@@ -1,0 +1,5 @@
+git pull origin main	reset lại code mới nhất
+git add .	thêm tất cả các file chỉnh sửa
+git commit -m "chú thích" 	ghi chú chỉnh sửa
+git status	xem trạng thái
+git push origin main	đẩy code lên github
