@@ -1,0 +1,1167 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='dt_ds_visual' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' inline='true' name='federated.1ep51pg1v9huno15aa1ya1602e9e' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dt_Ds_Visual' name='excel-direct.1903m6e00m7mo10zm5jis0xnq5ig'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Admin/Documents/duan/DATN-main/visualization/Dt_Ds_Visual.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1903m6e00m7mo10zm5jis0xnq5ig' name='dientich_danso_clean' table='[dientich_danso_clean$]' type='table'>
+          <columns gridOrigin='A1:E820:no:A1:E820:0' header='yes' outcome='6'>
+            <column datatype='string' name='Địa phương' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy' name='Năm' ordinal='1' />
+            <column datatype='real' name='Diện tích(Km2)' ordinal='2' />
+            <column datatype='real' name='Dân số trung bình' ordinal='3' />
+            <column datatype='real' name='Mật độ dân số (Người/km2)' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dientich_danso_clean]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E820:no:A1:E820:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Địa phương</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Địa phương]</local-name>
+            <parent-name>[dientich_danso_clean]</parent-name>
+            <remote-alias>Địa phương</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LVI_RVN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Năm</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Năm]</local-name>
+            <parent-name>[dientich_danso_clean]</parent-name>
+            <remote-alias>Năm</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LVI_RVN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diện tích(Km2)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Diện tích(Km2)]</local-name>
+            <parent-name>[dientich_danso_clean]</parent-name>
+            <remote-alias>Diện tích(Km2)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dân số trung bình</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dân số trung bình]</local-name>
+            <parent-name>[dientich_danso_clean]</parent-name>
+            <remote-alias>Dân số trung bình</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mật độ dân số (Người/km2)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mật độ dân số (Người/km2)]</local-name>
+            <parent-name>[dientich_danso_clean]</parent-name>
+            <remote-alias>Mật độ dân số (Người/km2)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='dientich_danso_clean' datatype='table' name='[__tableau_internal_object_id__].[dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+          <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+        </semantic-values>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+        </semantic-values>
+      </column>
+      <column-instance column='[Forecast Indicator]' derivation='Attribute' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[attr:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Địa phương)' hidden='true' name='[Action (Địa phương)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Địa phương]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_0xzo9ku1uhbph71ce550g0jmao3o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Địa phương</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Địa phương]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Địa phương</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dientich_danso_clean</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LVI_RVN' />
+              <object-id>[dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Năm</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Năm]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Năm</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dientich_danso_clean</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diện tích(Km2)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Diện tích(Km2)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diện tích(Km2)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dientich_danso_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>232</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dân số trung bình</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Dân số trung bình]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dân số trung bình</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dientich_danso_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>794</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mật độ dân số (Người/km2)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mật độ dân số (Người/km2)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mật độ dân số (Người/km2)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dientich_danso_clean</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>730</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='dientich_danso_clean' id='dientich!danso!clean_C9C43375CD76440883E35CC5D91A20D6'>
+            <properties context=''>
+              <relation connection='excel-direct.1903m6e00m7mo10zm5jis0xnq5ig' name='dientich_danso_clean' table='[dientich_danso_clean$]' type='table'>
+                <columns gridOrigin='A1:E820:no:A1:E820:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Địa phương' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy' name='Năm' ordinal='1' />
+                  <column datatype='real' name='Diện tích(Km2)' ordinal='2' />
+                  <column datatype='real' name='Dân số trung bình' ordinal='3' />
+                  <column datatype='real' name='Mật độ dân số (Người/km2)' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+      <datasources>
+        <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+        <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+            <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+          </semantic-values>
+          <semantic-values semantic-role='[State].[Name]'>
+            <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+          </semantic-values>
+        </column>
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]'>
+        <groupfilter function='level-members' level='[none:Địa phương:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight1' name='[Action1_CB35F67F63D349E2A680CDFADAFC93FC]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard 1' type='sheet'>
+        <exclude-sheet name='map vn' />
+      </source>
+      <command command='tsc:brush'>
+        <param name='exclude' value='card ds,card dt,map vn,card md ds,dt vs ds' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter1' name='[Action2_1AE75F69B3534D3880F343B95B060AA5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='map vn' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='card ds'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>Dân số &lt;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Địa phương]</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+            <column datatype='real' name='[Dân số trung bình]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Năm]' role='dimension' type='ordinal' />
+            <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dân số trung bình]' derivation='Sum' name='[sum:Dân số trung bình:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Năm]' derivation='Year' name='[yr:Năm:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+              </semantic-values>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]'>
+            <groupfilter function='level-members' level='[Địa phương]' user:ui-action-filter='[Action2_1AE75F69B3534D3880F343B95B060AA5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' filter-group='5'>
+            <groupfilter function='member' level='[yr:Năm:ok]' member='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' value='*#,# Người' />
+            <format attr='font-size' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' value='15' />
+            <format attr='text-align' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' value='center' />
+            <format attr='font-weight' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' value='bold' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#a4aeee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CA6B1A24-D4B4-40E1-A655-A01B6A03C582}' />
+    </worksheet>
+    <worksheet name='card dt'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>Diện tích &lt;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Địa phương]</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+            <column datatype='real' name='[Diện tích(Km2)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Năm]' role='dimension' type='ordinal' />
+            <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diện tích(Km2)]' derivation='Sum' name='[sum:Diện tích(Km2):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Năm]' derivation='Year' name='[yr:Năm:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+              </semantic-values>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]'>
+            <groupfilter function='level-members' level='[Địa phương]' user:ui-action-filter='[Action2_1AE75F69B3534D3880F343B95B060AA5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' filter-group='5'>
+            <groupfilter function='member' level='[yr:Năm:ok]' member='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Diện tích(Km2):qk]' value='*#,# Km2' />
+            <format attr='font-size' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Diện tích(Km2):qk]' value='15' />
+            <format attr='color' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Diện tích(Km2):qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Diện tích(Km2):qk]' value='bold' />
+            <format attr='text-align' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Diện tích(Km2):qk]' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#a4aeee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Diện tích(Km2):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7AEEC8C5-BFBE-4C71-A363-7CB85A89E584}' />
+    </worksheet>
+    <worksheet name='card md ds'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>Mật độ dân số &lt;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Địa phương]</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+            <column datatype='real' name='[Mật độ dân số (Người/km2)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Năm]' role='dimension' type='ordinal' />
+            <column-instance column='[Mật độ dân số (Người/km2)]' derivation='Avg' name='[avg:Mật độ dân số (Người/km2):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Năm]' derivation='Year' name='[yr:Năm:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+              </semantic-values>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]'>
+            <groupfilter function='level-members' level='[Địa phương]' user:ui-action-filter='[Action2_1AE75F69B3534D3880F343B95B060AA5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' filter-group='5'>
+            <groupfilter function='member' level='[yr:Năm:ok]' member='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[avg:Mật độ dân số (Người/km2):qk]' value='*# Người/Km2' />
+            <format attr='font-size' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[avg:Mật độ dân số (Người/km2):qk]' value='15' />
+            <format attr='font-weight' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[avg:Mật độ dân số (Người/km2):qk]' value='bold' />
+            <format attr='text-align' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[avg:Mật độ dân số (Người/km2):qk]' value='center' />
+            <format attr='vertical-align' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[avg:Mật độ dân số (Người/km2):qk]' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#a4aeee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[avg:Mật độ dân số (Người/km2):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0B6FF9B-665D-4D12-9E4E-620D5C0E2C6D}' />
+    </worksheet>
+    <worksheet name='dt vs ds'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>TĂNG TRƯỞNG DÂN SỐ VÀ DIỆN TÍCH</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+            <column datatype='real' name='[Diện tích(Km2)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Dân số trung bình]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Năm]' role='dimension' type='ordinal' />
+            <column-instance column='[Diện tích(Km2)]' derivation='Sum' forecast-column-base='[sum:Diện tích(Km2):qk]' forecast-column-type='forecast-value' name='[fVal:sum:Diện tích(Km2):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dân số trung bình]' derivation='Sum' forecast-column-base='[sum:Dân số trung bình:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Dân số trung bình:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Diện tích(Km2)]' derivation='Sum' name='[sum:Diện tích(Km2):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dân số trung bình]' derivation='Sum' name='[sum:Dân số trung bình:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Năm]' derivation='Year' name='[yr:Năm:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+              </semantic-values>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]'>
+            <groupfilter function='level-members' level='[Địa phương]' user:ui-action-filter='[Action2_1AE75F69B3534D3880F343B95B060AA5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Action (Địa phương)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#a4aeee' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.097955800592899323' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ep51pg1v9huno15aa1ya1602e9e].[fVal:sum:Dân số trung bình:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.097955800592899323' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ep51pg1v9huno15aa1ya1602e9e].[fVal:sum:Diện tích(Km2):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.097955800592899323' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ep51pg1v9huno15aa1ya1602e9e].[fVal:sum:Dân số trung bình:qk] + [federated.1ep51pg1v9huno15aa1ya1602e9e].[fVal:sum:Diện tích(Km2):qk])</rows>
+        <cols>[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]</cols>
+        <pages>
+          <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' lines='true' mark-color='#c290b4' mark-color-auto='false' mark-type='all' marks='false' />
+        <forecast-specification auto-forecast-agg='false' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' forecast-agg='Year-Trunc' ignore-last='0' model-type='auto-season' range-periods='Year-Trunc' range-size='7' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{A867DAC1-962A-4162-B46C-00731C6DB91B}' />
+    </worksheet>
+    <worksheet name='map vn'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+            <column datatype='real' name='[Dân số trung bình]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Năm]' role='dimension' type='ordinal' />
+            <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Dân số trung bình]' derivation='Sum' name='[sum:Dân số trung bình:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Năm]' derivation='Year' name='[yr:Năm:ok]' pivot='key' type='ordinal' />
+            <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[Country].[Name]'>
+                <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+              </semantic-values>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' filter-group='5'>
+            <groupfilter function='member' level='[yr:Năm:ok]' member='2022' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]</column>
+            <column>[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Longitude (generated)]' field-type='quantitative' max='12535674.295669898' min='11460218.337233117' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Latitude (generated)]' field-type='quantitative' max='2789014.0128861144' min='600498.73723631562' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[sum:Dân số trung bình:qk]' />
+              <lod column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' />
+              <geometry column='[federated.1ep51pg1v9huno15aa1ya1602e9e].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Latitude (generated)]</rows>
+        <cols>[federated.1ep51pg1v9huno15aa1ya1602e9e].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{6C2755D6-1AE8-4983-A2E1-2E1046E07029}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='dientich_danso_clean (Dt_Ds_Visual)' name='federated.1ep51pg1v9huno15aa1ya1602e9e' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ep51pg1v9huno15aa1ya1602e9e'>
+        <column datatype='date' name='[Năm]' role='dimension' type='ordinal' />
+        <column-instance column='[Địa phương]' derivation='None' name='[none:Địa phương:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Năm]' derivation='Year' name='[yr:Năm:ok]' pivot='key' type='ordinal' />
+        <column datatype='string' name='[Địa phương]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+          <semantic-values semantic-role='[Country].[Name]'>
+            <semantic-value key='&quot;An Giang&quot;' value='&quot;Viet Nam&quot;' />
+            <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Viet Nam&quot;' />
+          </semantic-values>
+          <semantic-values semantic-role='[State].[Name]'>
+            <semantic-value key='&quot;TP.Ho Chi Minh&quot;' value='&quot;Thanh pho Ho Chi Minh&quot;' />
+          </semantic-values>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='87839' id='33' param='horz' type-v2='layout-flow' w='98666' x='667' y='10875'>
+            <zone h='87839' id='31' type-v2='layout-basic' w='87833' x='667' y='10875'>
+              <zone h='23039' id='8' param='horz' type-v2='layout-flow' w='63244' x='667' y='10875'>
+                <zone h='23039' id='6' type-v2='layout-basic' w='63244' x='667' y='10875'>
+                  <zone h='23039' id='12' name='card ds' w='18903' x='667' y='10875'>
+                    <zone-style>
+                      <format attr='border-color' value='#a4aeee' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23039' id='15' name='card dt' w='18835' x='19570' y='10875'>
+                    <zone-style>
+                      <format attr='border-color' value='#a4aeee' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23039' id='16' name='card md ds' w='25506' x='38405' y='10875'>
+                    <zone-style>
+                      <format attr='border-color' value='#a4aeee' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='3' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='87839' id='30' name='map vn' w='24589' x='63911' y='10875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='64800' id='36' name='dt vs ds' w='63244' x='667' y='33914'>
+                <zone-style>
+                  <format attr='border-color' value='#a4aeee' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='3' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='130' h='87839' id='32' is-fixed='true' param='vert' type-v2='layout-flow' w='10833' x='88500' y='10875'>
+              <zone h='47910' id='35' mode='radiolist' name='map vn' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' type-v2='filter' w='10833' x='88500' y='10875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8360' id='39' mode='dropdown' name='map vn' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type-v2='filter' values='database' w='10833' x='88500' y='58785'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17685' id='38' name='dt vs ds' synchronized='1' type-v2='currpage' w='10833' x='88500' y='67145'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9589' id='42' type-v2='text' w='98666' x='667' y='1286'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='22'>Tổng quan diện tích và dân số Việt Nam</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#a4aeee' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='3' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#a4aeee' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='43' param='vert' type-v2='layout-flow' w='99018' x='491' y='1071'>
+                <zone h='9636' id='42' type-v2='text' w='99018' x='491' y='1071'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='22'>Tổng quan diện tích và dân số Việt Nam</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#a4aeee' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#a4aeee' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='171' h='23142' id='12' is-fixed='true' name='card ds' w='19597' x='491' y='10707'>
+                  <zone-style>
+                    <format attr='border-color' value='#a4aeee' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='171' h='23142' id='15' is-fixed='true' name='card dt' w='19523' x='20088' y='10707'>
+                  <zone-style>
+                    <format attr='border-color' value='#a4aeee' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='171' h='23142' id='16' is-fixed='true' name='card md ds' w='26432' x='39611' y='10707'>
+                  <zone-style>
+                    <format attr='border-color' value='#a4aeee' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='47925' id='35' mode='dropdown' name='map vn' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' type-v2='filter' w='7985' x='91524' y='10707'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8166' id='39' mode='dropdown' name='map vn' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type-v2='filter' values='database' w='7985' x='91524' y='58632'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88222' id='30' is-fixed='true' name='map vn' w='25481' x='66043' y='10707'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65080' id='36' is-fixed='true' name='dt vs ds' w='65552' x='491' y='33849'>
+                  <zone-style>
+                    <format attr='border-color' value='#a4aeee' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15930' id='38' name='dt vs ds' synchronized='1' type-v2='currpage' w='7985' x='91524' y='66798'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E1C5EE27-FBFD-4BB5-9DEF-4DC49CC2DF5B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='dt vs ds'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Forecast Indicator:nk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>2030</bucket>
+          </multibucket>
+        </current-page>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{45959EE6-5C67-4C2D-A5E5-DE9A0F452EE1}' />
+    </window>
+    <window class='worksheet' name='card ds'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B6E2014E-DEFF-4ED6-934F-9CE7489349C0}' />
+    </window>
+    <window class='worksheet' name='card dt'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{19BE7802-109B-4107-A1E6-4045634EF942}' />
+    </window>
+    <window class='worksheet' name='card md ds'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F2366D56-2968-491B-9775-626536759AD7}' />
+    </window>
+    <window class='worksheet' name='map vn'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[none:Địa phương:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1ep51pg1v9huno15aa1ya1602e9e].[yr:Năm:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{1F54E487-302D-4F53-9945-C573F4EDD11C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='card ds'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='card dt'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='card md ds'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='dt vs ds'>
+          <current-page>
+            <multibucket>
+              <bucket>2011</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='map vn'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='38' />
+      <device-preview visible='true' />
+      <simple-id uuid='{3A57EFAB-F99F-4EB1-B874-54715F9353B4}' />
+    </window>
+  </windows>
+</workbook>
